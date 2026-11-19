@@ -53,7 +53,7 @@ public class AuthenticationController {
      *
      * @param authRoleRegisterDto DTO containing the name of the role to create
      * @return a {@link ResponseEntity} with a success message and HTTP 200 OK,
-     *         or an error message with HTTP 400 Bad Request if the role exists
+     * or an error message with HTTP 400 Bad Request if the role exists
      */
 	@PostMapping("/register_authorized_role")
 	public ResponseEntity<String> register_authRole(
@@ -76,11 +76,11 @@ public class AuthenticationController {
      * Registers a new user and assigns them the default "USER" role.
      *
      * @param authUserRegisterDto DTO containing the new user's username and
-     *                            raw password
+     * raw password
      * @return a {@link ResponseEntity} with a success message and HTTP 200 OK,
-     *         or an error message with HTTP 400 Bad Request if username is taken
+     * or an error message with HTTP 400 Bad Request if username is taken
      * @throws RuntimeException if the default "USER" role is not found in the
-     *                          database
+     * database
      */
 	@PostMapping("/register_authorized_user")
 	public ResponseEntity<String> register_authUser(
@@ -111,9 +111,10 @@ public class AuthenticationController {
      * Authenticates a user with the provided login credentials and sets the
      * security context.
      *
-     * @param authLoginDto DTO containing the user's login username and password
+     * @param authLoginDto DTO containing the user's login username and 
+	 * password
      * @return a {@link ResponseEntity} confirming successful sign-in with
-     *         HTTP 200 OK
+     * HTTP 200 OK
      */
 	@PostMapping("/auth_login")
 	public ResponseEntity<String> login(

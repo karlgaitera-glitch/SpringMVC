@@ -63,8 +63,8 @@ public class SecurityConfig {
      * Exposes the {@link AuthenticationManager} bean from the Spring Security
      * configuration.
      *
-     * @param authentication the {@link AuthenticationConfiguration} to retrieve
-     *                       the manager from
+     * @param authentication the {@link AuthenticationConfiguration} 
+     * to retrieve the manager from
      * @return the configured {@link AuthenticationManager}
      * @throws Exception if the authentication manager cannot be retrieved
      */
